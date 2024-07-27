@@ -14,7 +14,7 @@ In this repo, we set up GANs using MLP layers (MLP-GAN) and KAN layers (KAN-GAN)
 
 ## Parameters
 * *mode*: working mode ("train" or "test").
-* *ds_name*: dataset name ("mnist" or "fashion_mnist").
+* *ds_name*: dataset name ("mnist", "fashion_mnist", or "sl_mnist").
 * *model_name*: type of models (mlp_gan, kan_gan, mlp_kan_gan, kan_mlp_gan)
 * *epochs*: the number of epochs.
 * *batch_size*: the training batch size.
