@@ -1,7 +1,7 @@
 # KAN-SGAN
 Semi-supervised learning with Generative Adversarial Networks (SGANs) using Kolmogorov-Arnold Network Layers (KANLs)
 
-In this repo, we set up GANs using MLP layers (MLP-GAN) and KAN layers (KAN-GAN). We compared the performance between those and found KAN-SGAN outperformed MLP-SGAN. We will publish our paper soon.
+In this repo, we set up GANs using MLP layers (MLP-GAN) and KAN layers (KAN-GAN). We compared their performance and found that KAN-SGAN outperformed naive MLP-SGAN. We will publish our paper soon.
 
 # Requirements 
 * numpy==1.26.4
@@ -11,6 +11,7 @@ In this repo, we set up GANs using MLP layers (MLP-GAN) and KAN layers (KAN-GAN)
 * tqdm==4.66.4
 
 # Training
+We trained the models  **on GeForce RTX 3060 Ti** (with other default parameters; see Commands).
 
 ## Parameters
 * *mode*: working mode ("train" or "test").
