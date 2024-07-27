@@ -43,6 +43,7 @@ In this repo, we set up GANs using MLP layers (MLP-GAN) and KAN layers (KAN-GAN)
 ```python run_gan.py --mode "train" --model_name "mlp_gan" --epochs 25 --batch_size 64 --n_latent 64 --n_input 784 --n_hidden 64 --n_output 10 --ds_name "fashion_mnist" --note "full_0" --n_examples 1000```
 
 # Acknowledgements
+There is a lot of work we need to say thank you here; update later.
 
 # Paper
 We will publish our paper soon.
