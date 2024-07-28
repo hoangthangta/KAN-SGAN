@@ -16,13 +16,13 @@ In this repo, we set up GANs using MLP layers (MLP-GAN) and KAN layers (KAN-GAN)
 We trained the models  **on GeForce RTX 3060 Ti** (with other default parameters; see Commands).
 
 ## Parameters
-* *mode*: working mode ("train" or "test").
-* *ds_name*: dataset name ("mnist", "fashion_mnist", or "sl_mnist").
-* *model_name*: type of models (mlp_gan, kan_gan, mlp_kan_gan, kan_mlp_gan)
+* *mode*: working mode ("train").
+* *ds_name*: dataset name ("mnist", "fashion_mnist", or "sl_mnist" (SignMNIST)).
+* *model_name*: type of models (**mlp_gan, kan_gan, mlp_kan_gan, kan_mlp_gan**). If using **mlp_kan_gan**, the generator is mlp and the discriminator is kan (defined in kan_layer). If using **kan_mlp_gan**, the generator is kan (defined in kan_layer) and the discriminator is mlp.
 * *epochs*: the number of epochs.
 * *batch_size*: the training batch size.
 * *n_input*: The number of input neurons.
-* *n_hidden*: The number of hidden neurons. We use only 1 hidden layer. You can modify the code (run.py) for more layers.
+* *n_hidden*: The number of hidden neurons. We use only 1 hidden layer. You can modify the code (run.py or run_gan.py) for more layers.
 * *n_output*: The number of output neurons (classes). For MNIST, there are 10 classes.
 * *grid_size*: The size of grids (default: 5). Use with bsrbf_kan and efficient_kan.
 * *spline_order*: The order of spline (default: 3). Use with bsrbf_kan and efficient_kan.
