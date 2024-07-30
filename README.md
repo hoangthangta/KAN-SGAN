@@ -47,7 +47,7 @@ We trained the models  **on GeForce RTX 3060 Ti** (with other default parameters
 
 # Experiments
 ## FashionMNIST
-We train all models over 35 epochs. For the MLP combined with KANs, the model architecture is configured as (768, 64, 10). In the case of GANs, the discriminator is designed with an architecture of (768, 64, 10), while the generator has an architecture of (64, 64, 768).
+We train all models over 35 epochs. For the MLP combined with KANs, the model architecture is configured as (768, 64, 10). In the case of GANs, the discriminator is designed with an architecture of (768, 64, 10), while the generator has an architecture of (64, 64, 768). The results presented are based on a single random training session.
 
  Network | Total Layers | Training Accuracy | Val Accuracy | Macro F1 | Macro Precision | Macro Recall | Training time (seconds) | Params
  | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -57,9 +57,15 @@ We train all models over 35 epochs. For the MLP combined with KANs, the model ar
  | kan_gan (faster_kan) | 2 (768, 64, 10) | 92.87 | 89.29 | 89.21 | 89.20 | 89.27 | 328 | - |
  | fast_kan | 2 (768, 64, 10) | 98.19 | 89.37 | 89.32 | 89.32 | 89.35 | 207 | - |
  | kan_gan (fast_kan) | 2 (768, 64, 10) | 97.71 | 89.39 | 89.35 | 89.35 | 89.37 | 360 | - |
+ | efficient_kan | 2 (768, 64, 10) | - | - | - | - | - | - | - |
+ | kan_gan (efficient_kan) | 2 (768, 64, 10) | - | - | - | - | - | - | - |
+ | bsrbf_kan | 2 (768, 64, 10) | - | - | - | - | - | - | - |
+ | kan_gan (bsrbf_kan) | 2 (768, 64, 10) | - | - | - | - | - | - | - |
 
 # Acknowledgements
 There is a lot of work we need to say thank you here; update later.
+
+* Our previous work: https://github.com/hoangthangta/BSRBF_KAN
 
 # Paper
 We will publish our paper soon.
