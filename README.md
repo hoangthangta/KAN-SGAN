@@ -64,8 +64,11 @@ We train all models over 35 epochs. For the MLP combined with KANs, the model ar
 
 # Acknowledgements
 There is a lot of work we need to say thank you here; update later.
-
-* Our previous work: https://github.com/hoangthangta/BSRBF_KAN
+* EfficientKAN: https://github.com/Blealtan/efficient-kan
+* FastKAN: https://github.com/ZiyaoLi/fast-kan
+* FasterKAN: https://github.com/AthanasiosDelis/faster-kan
+* BSRBF-KAN: https://github.com/hoangthangta/BSRBF_KAN (also our previous work)
+* Original KAN: https://github.com/KindXiaoming/pykan
 
 # Paper
 We will publish our paper soon.
