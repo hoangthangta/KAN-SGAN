@@ -59,8 +59,8 @@ We train all models over 35 epochs. For the MLP combined with KANs, the model ar
  | kan_gan (fast_kan) | 2 (768, 64, 10) | 97.71 | 89.39 | 89.35 | 89.35 | 89.37 | 360 | - |
  | efficient_kan | 2 (768, 64, 10) | 95.11 | 89.03 | 88.97 | 88.97 | 89.01 | 255 | - |
  | kan_gan (efficient_kan) | 2 (768, 64, 10) | 92.23  | 88.13 | 88.08 | 88.07 | 88.14 | 468 | - |
- | bsrbf_kan | 2 (768, 64, 10) | 99.32 | 89.11 | 89.07 | 89.07 | 89.09 | 281 | - |
- | kan_gan (bsrbf_kan) | 2 (768, 64, 10) | **89.44** | 99.14 | 89.41 | 89.41 | 89.45 | 589 | - |
+ | bsrbf_kan | 2 (768, 64, 10) | **99.32** | 89.11 | 89.07 | 89.07 | 89.09 | 281 | - |
+ | kan_gan (bsrbf_kan) | 2 (768, 64, 10) |  99.14 | **89.44**| 89.41 | 89.41 | 89.45 | 589 | - |
 
 # Acknowledgements
 There is a lot of work we need to say thank you here; update later.
