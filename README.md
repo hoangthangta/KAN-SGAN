@@ -55,8 +55,8 @@ We train all models over 35 epochs. For the MLP combined with KANs, the model ar
  | mlp_gan | 2 (768, 64, 10) | 93.97 | 88.88 | 88.85 | 88.83 | 88.89 | 319 | - |
  | faster_kan | 2 (768, 64, 10) | 94.36 | 89.12 | 89.05 | 89.05 | 89.10 | 223 | - |
  | kan_gan (faster_kan) | 2 (768, 64, 10) | 92.87 | 89.29 | 89.21 | 89.20 | 89.27 | 328 | - |
- | fast_kan | 2 (768, 64, 10) | 94.36 | 89.12 | 89.05 | 89.05 | 89.10 | 223 | - |
- | kan_gan (fast_kan) | 2 (768, 64, 10) | 92.87 | 89.29 | 89.21 | 89.20 | 89.27 | 328 | - |
+ | fast_kan | 2 (768, 64, 10) | 98.19 | 89.37 | 89.32 | 89.32 | 89.35 | 207 | - |
+ | kan_gan (fast_kan) | 2 (768, 64, 10) | 97.71 | 89.39 | 89.35 | 89.35 | 89.37 | 360 | - |
 
 # Acknowledgements
 There is a lot of work we need to say thank you here; update later.
