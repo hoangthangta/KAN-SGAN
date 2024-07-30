@@ -45,6 +45,19 @@ We trained the models  **on GeForce RTX 3060 Ti** (with other default parameters
 
 ```python run_gan.py --mode "train" --model_name "mlp_gan" --epochs 25 --batch_size 64 --n_latent 64 --n_input 784 --n_hidden 64 --n_output 10 --ds_name "fashion_mnist" --note "full_0" --n_examples 1000```
 
+# Experiments
+## FashionMNIST
+We train all models over 35 epochs. For the MLP combined with KANs, the model architecture is configured as (768, 64, 10). In the case of GANs, the discriminator is designed with an architecture of (768, 64, 10), while the generator has an architecture of (64, 64, 768).
+
+ Network | Total Layers | Training Accuracy | Val Accuracy | Macro F1 | Macro Precision | Macro Recall | Training time (seconds) | Params
+ | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+ | mlp | 2 (768, 64, 10) | 93.59 | 88.83 | 88.80 | 88.83 | 88.84 | 207 | - |
+ | mlp_gan | 2 (768, 64, 10) | 93.97 | 88.88 | 88.85 | 88.83 | 88.89 | 319 | - |
+ | faster_kan | 2 (768, 64, 10) | 94.36 | 89.12 | 89.05 | 89.05 | 89.10 | 223 | - |
+ | kan_gan (faster_kan) | 2 (768, 64, 10) | 92.87 | 89.29 | 89.21 | 89.20 | 89.27 | 328 | - |
+ | fast_kan | 2 (768, 64, 10) | 94.36 | 89.12 | 89.05 | 89.05 | 89.10 | 223 | - |
+ | kan_gan (fast_kan) | 2 (768, 64, 10) | 92.87 | 89.29 | 89.21 | 89.20 | 89.27 | 328 | - |
+
 # Acknowledgements
 There is a lot of work we need to say thank you here; update later.
 
