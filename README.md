@@ -1,9 +1,7 @@
-**Updating code...**
+**We will publish our paper soon...**
 
 # KAN-SGAN
-Semi-supervised learning with Generative Adversarial Networks (SGANs) using Kolmogorov-Arnold Network Layers (KANLs)
-
-In this repo, we set up GANs using MLP layers (MLP-GAN) and KAN layers (KAN-GAN). We will soon publish our paper.
+Semi-supervised learning with Generative Adversarial Networks (SGANs) using Kolmogorov-Arnold Network Layers (KANLs). In this repo, we set up GANs using MLP layers (MLP-GAN) and KAN layers (KAN-GAN).
 
 # Requirements 
 * numpy==1.26.4
