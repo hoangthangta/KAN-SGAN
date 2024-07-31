@@ -26,6 +26,8 @@ class EfficientKANLinear(torch.nn.Module):
         self.out_features = out_features
         self.grid_size = grid_size
         self.spline_order = spline_order
+        
+        self.ln = nn.LayerNorm(self.in_features) # layer normalization
 
         h = (grid_range[1] - grid_range[0]) / grid_size # 0.45, 0.5
         grid = (
@@ -166,6 +168,7 @@ class EfficientKANLinear(torch.nn.Module):
         
         original_shape = x.shape
         x = x.view(-1, self.in_features)
+        x = self.ln(x) # layer normalization
         
         base_output = F.linear(self.base_activation(x), self.base_weight)
         
