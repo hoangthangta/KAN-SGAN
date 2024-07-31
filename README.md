@@ -4,11 +4,15 @@
 Semi-supervised learning with Generative Adversarial Networks (SGANs) using Kolmogorov-Arnold Network Layers (KANLs). In this repo, we set up GANs using MLP layers (MLP-GAN) and KAN layers (KAN-GAN).
 
 # Requirements 
-* numpy==1.26.4
+* numpy==2.0.1
 * numpyencoder==0.3.0
-* torch==2.3.0+cu118
-* torchvision==0.18.0+cu118
+* prettytable==3.10.2
+* scikit_learn==1.4.2
+* scipy==1.14.0
+* torch==2.3.1
+* torchvision==0.18.1
 * tqdm==4.66.4
+* transformers==4.40.1
 
 # Training
 We trained the models  **on GeForce RTX 3060 Ti** (with other default parameters; see Commands).
