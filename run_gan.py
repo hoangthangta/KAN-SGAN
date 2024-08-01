@@ -293,7 +293,6 @@ def run(model_name = 'kan_gan', batch_size = 64, n_input = 28*28, epochs = 10, n
             best_accuracy = val_accuracy
             best_epoch = epoch
             torch.save(D, output_path + '/' + saved_model_name)
-        fake_accuracy
         
         print(f'Epoch [{epoch}/{epochs}], Discriminator Accuracy: {train_accuracy:.6f}, Discriminator Loss: {train_d_loss/len(trainloader):.6f}, Generator Accuracy: {fake_accuracy:.6f}, Generator Loss: {train_g_loss/len(trainloader):.6f}, D(x): {real_adv_ave/len(trainloader):.6f}, D(G(z)): {fake_adv_ave/len(trainloader):.6f}')
         #print(f'Epoch [{epoch}/{epochs}], Discriminator Accuracy: {train_accuracy:.6f}, Discriminator Loss: {train_d_loss/len(trainloader):.6f}, Generator Loss: {train_g_loss/len(trainloader):.6f}')         
