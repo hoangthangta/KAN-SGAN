@@ -32,7 +32,7 @@ We trained the models  **on GeForce RTX 3060 Ti** (with other default parameters
 * *device*: use "cuda" or "cpu".
 * *note*: write notes to save in model file names
 * *n_latent*: latent dimension for the generator (default: 64)
-* *n_examples*: the number of examples in the training set used for training (default: -1, mean use all training data)
+* *n_examples*: the number of examples in the training set used for training (default: -1, means all training data)
 * *kan_layer*: kan layers used in the discriminator and the generator (**efficient_kan, fast_kan, faster_kan, bsrbf_kan**)
 
 ## Commands
