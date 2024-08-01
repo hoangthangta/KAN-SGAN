@@ -49,7 +49,7 @@ We trained the models  **on GeForce RTX 3060 Ti** (with other default parameters
 
 # Experiments
 ## FashionMNIST
-We train all models over 35 epochs. For the MLP combined with KANs, the model architecture is configured as (768, 64, 10). In the case of GANs, the discriminator is designed with an architecture of (768, 64, 10), while the generator has an architecture of (64, 64, 768). The results presented are based on a single random training session.
+We train all models over 35 epochs with full training data. For the MLP combined with KANs, the model architecture is configured as (768, 64, 10). In the case of GANs, the discriminator is designed with an architecture of (768, 64, 10), while the generator has an architecture of (64, 64, 768). The results presented are based on a single random training session.
 
 All networks use layer normalization.
 
