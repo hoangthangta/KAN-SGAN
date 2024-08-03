@@ -51,21 +51,6 @@ We trained the models  **on GeForce RTX 3060 Ti** (with other default parameters
 ## FashionMNIST
 We train all models over 35 epochs with full training data. For the MLP combined with KANs, the model architecture is configured as (768, 64, 10). In the case of GANs, the discriminator is designed with an architecture of (768, 64, 10), while the generator has an architecture of (64, 64, 768). The results presented are based on a single random training session.
 
-All networks use layer normalization.
-
- Network | Total Layers | Training Accuracy | Val Accuracy | Macro F1 | Macro Precision | Macro Recall | Training time (seconds) | Params
- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | mlp | 2 (768, 64, 10) | 93.59 | 88.83 | 88.80 | 88.83 | 88.84 | 207 | - |
- | mlp_gan | 2 (768, 64, 10) | 93.97 | 88.88 | 88.85 | 88.83 | 88.89 | 319 | - |
- | faster_kan | 2 (768, 64, 10) | 94.36 | 89.12 | 89.05 | 89.05 | 89.10 | 223 | - |
- | kan_gan (faster_kan) | 2 (768, 64, 10) | 92.87 | 89.29 | 89.21 | 89.20 | 89.27 | 328 | - |
- | fast_kan | 2 (768, 64, 10) | 98.19 | 89.37 | 89.32 | 89.32 | 89.35 | 207 | - |
- | kan_gan (fast_kan) | 2 (768, 64, 10) | 97.71 | 89.39 | 89.35 | 89.35 | 89.37 | 360 | - |
- | efficient_kan (no layer norm) | 2 (768, 64, 10) | 95.11 | 89.03 | 88.97 | 88.97 | 89.01 | 255 | - |
- | kan_gan (efficient_kan, no layer norm) | 2 (768, 64, 10) | 92.23  | 88.13 | 88.08 | 88.07 | 88.14 | 468 | - |
- | bsrbf_kan | 2 (768, 64, 10) | **99.32** | 89.11 | 89.07 | 89.07 | 89.09 | 281 | - |
- | kan_gan (bsrbf_kan) | 2 (768, 64, 10) |  99.14 | **89.44**| **89.41** | **89.41** | **89.45** | 589 | - |
-
 # Acknowledgements
 There is a lot of work we need to say thank you here; update later.
 * EfficientKAN: https://github.com/Blealtan/efficient-kan
