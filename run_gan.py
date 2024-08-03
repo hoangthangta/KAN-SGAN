@@ -206,7 +206,7 @@ def run(model_name = 'kan_gan', batch_size = 64, n_input = 28*28, epochs = 10, n
                 pbar.set_postfix(train_accuracy=train_accuracy/len(trainloader), lr=d_optimizer.param_groups[0]['lr'])
         
         # Incorporate unlabelled data for discriminator training
-        '''with tqdm(valloader) as pbar:
+        with tqdm(valloader) as pbar:
             for i, (images, _) in enumerate(pbar):
             #for images, _ in valloader: 
                 images = images.view(-1, n_input).to(device)
@@ -248,7 +248,7 @@ def run(model_name = 'kan_gan', batch_size = 64, n_input = 28*28, epochs = 10, n
                 nn.utils.clip_grad_norm_(G.parameters(), max_norm=1.0)
                 g_optimizer.step()
                 
-                pbar.set_postfix(lr=d_optimizer.param_groups[0]['lr'])'''
+                pbar.set_postfix(lr=d_optimizer.param_groups[0]['lr'])
             
         
         g_scheduler.step()
